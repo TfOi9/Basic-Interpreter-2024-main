@@ -27,7 +27,7 @@ class ErrorException : public std::exception {
 public:
     explicit ErrorException(std::string message);
 
-    ~ErrorException() _NOEXCEPT;
+    //~ErrorException() _NOEXCEPT;
 
     std::string getMessage() const;
 
