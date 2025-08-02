@@ -5,7 +5,7 @@ ErrorException::ErrorException(std::string message) {
     this->message = message;
 }
 
-ErrorException::~ErrorException() throw() = default;
+//ErrorException::~ErrorException() throw() = default;
 
 std::string ErrorException::getMessage() const {
     return message;
