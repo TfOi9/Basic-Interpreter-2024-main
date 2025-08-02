@@ -36,7 +36,7 @@ Program::~Program(){
 void Program::clear() {
     // Replace this stub with your own code
     //todo
-    for(std::map<int,std::pair<std::string,Statement*> >::iterator it=lines.begin();it!=lines.end();it++){
+    for(std::unordered_map<int,std::pair<std::string,Statement*> >::iterator it=lines.begin();it!=lines.end();it++){
         if(it->second.second!=nullptr){
             delete it->second.second;
         }
