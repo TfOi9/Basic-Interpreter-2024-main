@@ -165,7 +165,7 @@ private:
 
     // stores all the line contents
     // int - lineNumber, string - original line content, Statement* - pointer to parsed statement of the line
-    std::map<int,std::pair<std::string,Statement*> > lines;
+    std::unordered_map<int,std::pair<std::string,Statement*> > lines;
     
     // stores all the lineNumbers in acending order
     std::set<int> lineNumbers;
